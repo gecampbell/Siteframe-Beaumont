@@ -1,0 +1,100 @@
+/* $Id: default.css,v 1.136 2005/12/14 22:47:49 glen Exp $
+** Copyright (c)2005, Glen Campbell. All rights reserved.
+*/
+body { text-align:center; margin-top:0; }
+textarea.widgEditor { height:10em; }
+hr { border-width:1px; }
+th, td { vertical-align:top; font-family:verdana,arial,helvetica,sans-serif; line-height:130%; }
+code { line-height:100%; }
+strong,h1,h2,h3,h4 { font-family: helvetica,tahoma,arial,verdana,sans-serif; }
+big { font-family: helvetica,tahoma,arial,verdana,sans-serif; font-weight:bold; }
+small { font-family:verdana,arial,helvetica,sans-serif; font-size:x-small; color:gray; text-transform:lowercase; }
+
+a img { border:none; }
+a { text-decoration:none; color:blue; }
+a:visited { color:navy; }
+a:hover { color:gray; }
+
+form { font-family: verdana,helvetica,arial,sans-serif; font-size:11px; color:gray; clear:left; line-height:120%; margin-top:1em; }
+#form_advanced { padding:.5em; background:#eee; }
+textarea { width:90%; padding:.5em; height:8em; }
+label { font-weight:bold; font-size:12px; color:black; }
+.item { color:black; padding-top:3px; padding-bottom:3px; }
+.help { margin-top:0; }
+input, select, textarea { border:1px gray solid; }
+
+h1 { font-family: helvetica,arial,sans-serif; font-size:30px; font-weight:normal; color:gray; }
+blockquote { text-indent:28px; color: gray; font-family: georgia, times new roman, times, serif; font-style: italic; font-size:18px; width:200px; float:right; padding:10px 0 10px 10px; line-height:150%; margin: .5em 0 .5em .5em; border-top:1px silver solid; border-bottom:1px silver solid; background-repeat:no-repeat; }
+blockquote .lq { float:left; margin-right:5px; }
+blockquote .rq { float:right; margin-left:5px; }
+
+#content { background: #fff; width:750px; text-align:left; margin-left:auto; margin-right:auto; }
+#header { background: navy; height:90px; color:silver; padding:5px 10px 5px 10px; margin-bottom:5px; }
+#header h1 { color:silver; margin-top:10px; margin-bottom:5px; font-family: georgia, times new roman, times, serif; font-size:42px; letter-spacing:-1px; }
+#header h1 a { color:white; text-decoration:none; }
+#header #sitename { font-family: helvetica, arial, sans-serif; font-weight:bold; font-size:small; letter-spacing:0; margin-bottom:18px; color:white; }
+#header #sitename a { color:white; }
+#welcome { font-family: verdana, helvetica, arial, sans-serif; color:silver; font-size:12px; float:right; letter-spacing:0; margin-bottom:10px; }
+#welcome a { font-weight:bold; color:silver; }
+#welcome a:hover { color:white; }
+#main { font-family: helvetica, arial, sans-serif; width:550px; float:right; line-height:150%; }
+#menu { width:180px; float:left; font-family:helvetica,arial,sans-serif; font-size:smaller; margin-right:20px; color:black; line-height:130%; }
+#menu a { color:black; text-decoration:none; }
+#menu a:hover { color:navy; }
+#menu a span { display:none; }
+#menu a:hover span { display:inline; color: gray; }
+#menu ul { margin:1em 0 1em 0; padding:0; list-style:none; }
+#menu ul big { color:navy; font-weight:bold; }
+#menu p { }
+#footer { clear:both; font-family:verdana,arial,helvetica,sans-serif; font-size:10px; color:gray; margin-top:10px; border-top:1px silver solid; padding-top:5px; }
+#hello { color:dimgray; font-family:helvetica,arial,sans-serif; font-size:smaller; margin-bottom:20px; line-height:150%; border-bottom:1px silver solid; padding-bottom:.5em; }
+#hello p { }
+#header #hello a { font-weight:bold; color:black; }
+#wait { padding-top:5em; padding-bottom:10em; color:gray; font-style:italic; }
+#tags { font-family:helvetica,tahoma,verdana,arial,sans-serif; }
+
+.error { color:red; padding-top:1em; padding-bottom:1em; }
+.calendar { margin-left:auto; margin-right:auto; margin-bottom:1em; }
+.calendar, .calendar td, .calendar th { text-align:center; font-family:helvetica,tahoma,arial,verdana,sans-serif; font-size:small; }
+.calendar td { text-align:right; }
+.calendar a { font-weight:bold; }
+.info { font-family: helvetica,arial,verdana,sans-serif; font-size:small; color:gray; }
+.menu { font-family: helvetica,arial,sans-serif; font-size:smaller; color:gray; clear:both; margin-top:1em; margin-bottom:1em; padding:3px; }
+.menu a { color:gray; text-decoration:none; }
+.menu a:hover { color:black; }
+
+.blog_item { clear:left; }
+.image_item { float:left; margin:0; padding:10px; text-align:center; width:100px; height:100px; overflow-y: hidden; }
+
+.comments { font-family: helvetica,arial,verdana,sans-serif; font-size:12px; background:#eee; padding:10px 5px; margin-bottom:1em; line-height:130%; clear:right; }
+.comments form textarea { height:5em; }
+.comment { }
+.comment_subject { font-size:larger; font-weight:bold; }
+.comment_buttons { float:right; font-size:smaller; font-weight:normal; color:gray; }
+.comment_buttons a { color:gray; }
+.comment_buttons a:hover { color:black; }
+.comment_text { }
+.comment_info { font-size:small; color:gray; }
+.cimage { clear:left; float:left; margin-right:10px; }
+#cform { clear:right; }
+
+table, tr, td, th { font-family:verdana,arial,helvetica,sans-serif; font-size:12px; }
+/* table class="list" for user profiles */
+.list { border-bottom:1px silver solid; width:100%; border-collapse:collapse; background:white; margin-bottom:1em; }
+.list th, .list td { font-family:verdana,arial,helvetica,sans-serif; font-size:11px; color:gray; padding:2px; }
+.list th { background:gray; color:white; font-weight:normal; }
+.list a { font-weight:bold; text-decoration:none; color:steelblue; }
+.list a:hover { color:black; }
+.list th a { color:white; font-weight:normal; text-decoration:none; }
+.list th a:hover { color:white; text-decoration:underline; }
+
+.bigimage { width:350px; float:right; text-align:center; padding:10px; margin-left:10px; margin-top:1em; margin-bottom:1em; font-size:smaller; }
+.blog_images { width:auto; float:left; margin-right:.5em; }
+.paginator { font-family:verdana,arial,helvetica,sans-serif; font-size:10px; }
+.breadcrumb { font-family:verdana,arial,helvetica,sans-serif; font-size:small; color:gray; margin-bottom:2em; }
+.breadcrumb a { color:gray; text-decoration:none; }
+.breadcrumb a:hover { text-decoration:underline; }
+
+.attachments { font-size:smaller; line-height:100%; }
+.file { width:80px; height:100px; float:left; text-align:center; margin-right:10px; }
+.icon { width:80px; height:80px; text-align:center; vertical-align:bottom; display:table-cell; padding-bottom:5px; }

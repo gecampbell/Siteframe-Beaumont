@@ -1,0 +1,106 @@
+/* $Id: default.css,v 1.34 2006/02/21 17:35:29 glen Exp $
+** Copyright (c)2005, Glen Campbell. All rights reserved.
+*/
+body { text-align:center; background:white; color:black; }
+textarea.widgEditor { height:10em; background:white; }
+hr { border-width:1px; }
+th, td { vertical-align:top; font-family:verdana,arial,helvetica,sans-serif; line-height:130%; }
+code { line-height:100%; }
+strong,h1,h2,h3,h4 { font-family: helvetica,tahoma,arial,verdana,sans-serif; }
+big { font-family: helvetica,tahoma,arial,verdana,sans-serif; font-weight:bold; color:#360; }
+small { font-family:verdana,arial,helvetica,sans-serif; font-size:x-small; color:gray; text-transform:lowercase; }
+pre, code { line-height:120%; }
+
+a img { border:none; }
+a, a:visited { text-decoration:none; }
+a { color: #6C0; }
+a:visited { color: #390; }
+a:hover { color: gray; }
+
+form { font-family: verdana,helvetica,arial,sans-serif; font-size:11px; color:gray; clear:left; line-height:120%; margin-bottom:1em; }
+#form_advanced { padding:.5em; background:#eee; }
+textarea { width:90%; padding:.5em; height:8em; }
+label { font-weight:bold; font-size:12px; color:black; }
+.item { padding-top:3px; padding-bottom:3px; }
+.help { margin-top:0; }
+input, select, textarea { border:1px gray solid; }
+
+h1 { font-family: helvetica,arial,sans-serif; font-size:30px; font-weight:normal; color:gray; }
+blockquote { font-style: italic; font-size:18px; width:200px; float:right; padding:10px 0 10px 10px; line-height:150%; margin: .5em 0 .5em .5em; border-top:1px silver solid; border-bottom:1px silver solid; }
+
+#content { width:800px; text-align:left; margin-left:auto; margin-right:auto; }
+#content p { margin-top: 0; }
+#header { color:#360; margin-top:10px; font-family:helvetica,tahoma,arial,verdana,sans-serif; }
+#header h1 { font-size:48px; letter-spacing:-3px; border-bottom:1px gray solid; margin-bottom:20px; }
+#header h1 a { color:green; text-decoration:none; }
+#header #sitename { font-size:12px; letter-spacing:0; margin-bottom:18px; color:gray; }
+#header #sitename a { color:gray; }
+#welcome { color:black; font-size:12px; float:right; letter-spacing:0; margin-bottom:10px; }
+#welcome a { font-weight:bold; color:black; }
+#welcome a:hover { color:green; }
+#main { width:600px; float:left; line-height:150%; }
+#menu { width:190px; float:left; font-family:helvetica,arial,sans-serif; font-size:smaller; margin-left:10px; color:black; line-height:150%; padding: 0; }
+#menu a { color:gray; text-decoration:none; }
+#menu a:hover { color:green; }
+#menu a span { display:none; }
+#menu a:hover span { display:inline; color: black; }
+#menu ul { margin:0; padding:10px; list-style:none; background: #efe;  }
+#menu ul big { font-weight:bold; }
+#menu h3 { background: #cfc; padding: 3px 10px 3px 10px; color: green; margin-bottom:0; }
+#menu h3.first { margin-top: 0; }
+#menu p { margin-top:0; }
+#footer { clear:both; font-family:verdana,arial,helvetica,sans-serif; font-size:10px; color:gray; margin-top:10px; border-top:1px silver solid; padding-top:5px; }
+#hello { font-family:helvetica,arial,sans-serif; font-size:smaller; margin-bottom:20px; line-height:150%; border-bottom:1px silver solid; padding-bottom:.5em; }
+#hello p { margin-top:0;  }
+#header #hello a { font-weight:bold; color:black; }
+#wait { padding-top:5em; padding-bottom:10em; color:gray; font-style:italic; }
+#tags { font-family:helvetica,tahoma,verdana,arial,sans-serif; padding:1em; background:#eef; margin-bottom:1em; }
+#tags p { margin:0; padding: 0; }
+form#search { margin-bottom: 1em; }
+form#search input { color: #aaa; padding:3px; }
+
+.error { font-family:helvetica,arial,sans-serif; font-size:small; line-height:150%; color:red; padding-top:1em; padding-bottom:1em; }
+.calendar { margin-left:auto; margin-right:auto; margin-bottom:1em; }
+.calendar, .calendar td, .calendar th { text-align:center; font-family:helvetica,tahoma,arial,verdana,sans-serif; font-size:small; }
+.calendar td { text-align:right; }
+.calendar a { font-weight:bold; }
+.info { font-family: helvetica,arial,verdana,sans-serif; font-size:small; color:gray; }
+.menu { font-family: helvetica,arial,sans-serif; font-size:smaller; color:gray; clear:left; margin-top:1em; margin-bottom:1em; }
+.menu a { color:gray; text-decoration:none; }
+.menu a:hover { color:black; }
+
+.blog_item { }
+.image_item { float:left; margin:0; padding:10px; text-align:center; width:100px; height:100px; overflow-y: hidden; }
+
+.comments { font-family: helvetica,arial,verdana,sans-serif; font-size:12px; padding:10px 5px; margin-bottom:1em; line-height:130%; border-top:1px gray solid; background:#eee; clear:right; }
+.comments form textarea { height:5em; }
+.comment { }
+.comment_subject { font-size:larger; font-weight:bold; }
+.comment_buttons { float:right; font-size:smaller; font-weight:normal; color:gray; }
+.comment_buttons a { color:gray; }
+.comment_buttons a:hover { color:black; }
+.comment_text { }
+.comment_info { font-size:small; color:gray; }
+.cimage { clear:left; float:left; margin-right:1em; }
+#cform { margin-top:1em; margin-bottom:1em; border:1px gray solid; background: #eee; padding: 1em; }
+
+table, tr, td, th { font-family:verdana,arial,helvetica,sans-serif; font-size:12px; }
+/* table class="list" for user profiles */
+.list { border-bottom:1px silver solid; width:100%; border-collapse:collapse; background:white; margin-bottom:1em; }
+.list th, .list td { font-family:verdana,arial,helvetica,sans-serif; font-size:11px; color:gray; padding:2px; }
+.list th { background:gray; color:white; font-weight:normal; }
+.list a { font-weight:bold; text-decoration:none; color:steelblue; }
+.list a:hover { color:black; }
+.list th a { color:white; font-weight:normal; text-decoration:none; }
+.list th a:hover { color:white; text-decoration:underline; }
+
+.bigimage { width:340px; float:right; text-align:center; padding:10px; margin-left:10px; margin-top:1em; margin-bottom:1em; font-size:smaller; }
+.blog_images { width:auto; float:left; margin-right:10px; clear:left; }
+.paginator { font-family:verdana,arial,helvetica,sans-serif; font-size:10px; }
+.breadcrumb { font-family:verdana,arial,helvetica,sans-serif; font-size:small; color:gray; margin-bottom:2em; }
+.breadcrumb a { color:gray; text-decoration:none; }
+.breadcrumb a:hover { text-decoration:underline; }
+
+.rating { border:4px silver solid; width:78px; height:42px; text-align:center; padding:5px; margin-bottom:1em; }
+.starts { display:block; padding-bottom:10px; }
+.avgrating { font-size:24px; line-height:26px; color:gray; font-weight:bold; padding-top:5px; }

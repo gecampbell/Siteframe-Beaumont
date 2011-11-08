@@ -1,0 +1,90 @@
+/* $Id: siteframe.css,v 1.11 2005/11/27 06:00:02 glen Exp $
+ * These are Siteframe additions to the "burnt" theme CSS files
+ */
+textarea {
+width:100%;
+}
+label {
+font-weight: bold;
+}
+pre, code {
+line-height:120%;
+}
+.rating { 
+border:4px silver solid; 
+width:78px; 
+height:42px; 
+text-align:center; 
+padding:5px; 
+margin-bottom:1em; 
+}
+.stars { 
+display:block; 
+padding-bottom:5px; 
+}
+.stars img { 
+margin:0; 
+}
+.avgrating { 
+font-size:24px; 
+line-height:22px; 
+color:gray; 
+font-weight:bold; 
+padding-top:5px; 
+}
+.actionmenu {
+clear:both;
+margin-top:1em;
+margin-bottom:1em;
+}
+#form_advanced {
+border-left:3px silver solid;
+padding-left:10px;
+}
+.error {
+color: #C00;
+}
+.blog_image {
+float:left; 
+margin-bottom:0; 
+margin-right:5px;
+}
+
+.comments {
+margin-top:1em;
+}
+.comment {
+margin-bottom:1em;
+}
+.comment_buttons {
+float:right;
+}
+.comment_subject {
+font-weight:bold;
+}
+.comment_info {
+font-style:italic;
+}
+.cimage { 
+margin-bottom:0;
+margin-right:5px;
+float:left;
+}
+div.calendar {
+text-align:center;
+}
+table.calendar {
+line-height:120%;
+}
+.calendar th {
+text-align:center;
+}
+.calendar td {
+text-align:right;
+}
+.excerpt:first-line {
+text-transform:uppercase;
+}
+.text li {
+margin-bottom: 0;
+}

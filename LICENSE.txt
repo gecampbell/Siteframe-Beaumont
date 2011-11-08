@@ -1,0 +1,6 @@
+$Id: LICENSE.txt,v 1.2 2005/05/27 17:17:56 glen Exp $
+
+Siteframe(tm) is released under the Creative Commons Attribution-Sharealike
+2.0 License.  For complete information, follow the link below.
+
+http://creativecommons.org/licenses/by-sa/2.0/

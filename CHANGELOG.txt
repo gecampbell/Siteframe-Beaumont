@@ -1,0 +1,110 @@
+Version 5.0.5
+- changed DEFAULT_FILE_PERMS to 0777
+
+Version 5.0.4
+- fixed bug in feedback.inc
+
+Version 5.0.3
+- added extra parameters to {random}
+- removed URL exploit from login.php
+- added code to strip HTML tags from cookies (security)
+- updated setup.php to test for mysqli extension
+- updated search.php to correctly re-index Page objects
+- modified edit.php to allow editing invalid objects (errors in an object
+  could prevent fixing the errors)
+- added support for separate read/write database connections (to support use
+  in a replicated environment)
+
+Version 5.0.2
+- fixed http://bugs.broadpool.com/show_bug.cgi?id=129 (add to favorites didn't
+  work)
+- removed xml.php (redundant; not needed when API is available)
+- new template set "Blue Blog" (from OSWD)
+- fixed multiple XSS vulnerabilities
+- note that a new theme, "sinorca", is included but not working yet
+- you should update your .htaccess file from _htaccess; small modifications
+
+Version 5.0.1
+- added en-GB language support (Thanks, Chris!)
+- re-added Trackback support, though it's not on by default
+  NOTE: this requires a database update - use the admin menu
+- modified {tags} to support days=N (to fetch tags added in the last N days)
+
+Version 5.0.0B8(RC1)
+- new RSS logo, based on the joint Firefox/Microsoft design. Hey, I'm just
+  jumping on the bandwagon.
+- removed requirement for site_path in siteframe.ini (now computed
+  automatically)
+- updated "leaves" template set
+- in preparation for release, removed "bugs" links and build numbers
+
+Version 5.0.0B7
+- rewrote api.php to follow REST protocol
+- removed sendlink.php script - is insecure and can be used to send spam email
+- new AJAX rating widget
+- removed {all_folders} block
+- updated API to provide URL and <tags> block
+- deprecated xml.php; will remove in next distribution
+
+Version 5.0.0B6
+- DATABASE UPDATE IS REQUIRED FOR UPGRADE - Go to the Administrator menu, select
+  "Update Database," and follow the instructions.
+- removed support for ATOM 0.3 syndication (ATOM is now at 1.0 and there's
+  little interest in it)
+- rewrite all RSS handling to be performed by rss.php instead of by templates.
+  This uses the DOM XML extension and ensures valid XML.
+  NOTE: This means that all RSS URLs have changed.
+- changed the language files to use a valid ISO-639 language code (i.e., "en-US"
+  instead of "en_us"). This means that the language file names have changed.
+  NOTE: you MUST edit siteframe.ini and set lang_default = en-US instead of
+  en_us if you have previously installed Siteframe Beaumont
+- changes to rss.php to ensure feed validity
+- modifications to Group object for consistency with others
+
+Version 5.0.0B5
+- provided alternate index_item for some template sets for photo gallery
+  style thumbnails
+- added templates/attachments.tpl, a standard way of viewing page file
+  attachments. Also adds download tracking without disrupting the URL
+- removed {all_folders}, replaced with {all class="Folder"}
+- minor template modifications
+- modified File object to normalize filenames
+- changed (all) tag.tpl to use foreach instead of section
+- added admin function to add new user(s)
+- numerous small template tweaks
+
+Version 5.0.0B4
+- changed edit.php behavior to always redirect back to object page
+- modified form.tpl to move help text to template instead of form
+- corrected bug where editing a user would lose the user's photo
+- added function to remove a user's photo on demand
+- added duplicate checks for all fields marked "unique" on add
+- configuration option allow_self_rating to determine if users can rate
+  their own pages; modifications to template/rating.tpl to support
+
+Version 5.0.0B3
+- changed footers to use {textlink}
+- new theme "leaves" (still incomplete)
+- added "optional_include" for customization
+- added "alternate_login" for customization
+- enhanced XML generation
+- rewrite rules for XML (/xml/Page/12)
+
+Version 5.0.0B2
+- 5.0, beta 2
+- updated documentation in sitefame.ini to clarify things
+- lots of template tweaks
+- fixes to login.php & other scripts to ensure that header('Location: '...) has
+  a complete URL as required by the HTTP spec.
+- changes to "burnt" theme to correct errors in input forms
+- corrected problem in README.txt, admin menu reference
+- added "sanity checks" (on siteframe.ini) to setup.php
+- fixed bug in {random class="Link"} in "default" folder.tpl
+
+Version 5.0.0B1
+- 5.0, beta 1 - first official release
+
+Version 5.0.0A
+- Pre-alpha codebase; not currently incrementing version numbers
+
+$Id: CHANGELOG.txt,v 1.60 2007/09/04 18:11:57 glen Exp $

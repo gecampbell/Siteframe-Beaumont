@@ -1,0 +1,152 @@
+/* $Id: simple.css,v 1.101 2005/11/24 05:09:12 glen Exp $
+** Copyright (c)2004, Glen Campbell. All rights reserved.
+*/
+body { text-align:center; font-family:times new roman,times,serif; background:#eee; }
+form { font-family:verdana,arial,helvetica,sans-serif; font-size:12px; line-height:120%; }
+form label { font-weight: bold; margin: 6px 0 2px 0; padding: 0; }
+form .item { margin: 0; padding: 0; }
+form .help { color: gray; margin: 0 0 6px 0; padding: 0; clear:left; }
+textarea { width: 600px; }
+hr { border-width:1px; }
+th, td { line-height:120%; vertical-align:top; }
+code { line-height: 100%; }
+
+#bodydiv { width:740px; text-align:left; margin-left:auto; margin-right:auto; }
+#central { background:white; padding:10px; border:1px #690 solid; }
+#form_advanced { background:#eee; padding:.5em; }
+#header { background:#f90; color:white; font-family:helvetica,arial,verdana,sans-serif; font-size:36px; font-weight:bold; padding:30px; letter-spacing:-1px; text-align:center; }
+#header a { color:white; text-decoration:none; }
+#wait { font-family:verdana,arial,helvetica,sans-serif; font-size:12px; color:red; text-align:center; padding:50px 0 50px 0; }
+#filelist p { margin-bottom:10px; }
+#usermenu { width:150px; padding:3px; border:1px gray solid; background:white; position:absolute; }
+#usermenu a { display:block; color:black; text-decoration:none; padding:0 5px 0 5px; border:1px white solid; }
+#usermenu a:hover { background:#eee; border:1px silver solid; color:maroon; }
+#cprompt { font-family:verdana,arial,helvetica,sans-serif; font-size:11px; font-weight:normal; color:gray; }
+#cprompt a { color:gray; text-decoration:none; }
+#cprompt a:hover { text-decoration:underline; }
+#header #tagline { font-size:14px; text-align:center; }
+
+.pagemenu { width:180px; font-family:verdana,arial,helvetica,sans-serif; font-size:11px; line-height:140%; }
+.main { width:530px; float:right; }
+.menu { font-family:verdana,arial,helvetica,sans-serif; font-size:11px; clear:both; text-align:center; }
+.menu a { color: gray; text-decoration:none; }
+.menu a:hover { color:red; text-decoration:underline; }
+.adv a { text-decoration:none; font-weight:bold; color:navy; }
+.action { font-family:verdana,arial,helvetica,sans-serif; font-size:11px; clear:both; text-align:right; margin-top:10px; }
+.action a { font-weight:bold; color:#C33; text-decoration:none; }
+.action a:hover { color:black; }
+.error { font-family:verdana,arial,helvetica,sans-serif; font-size:12px; font-weight:bold; color:red; margin:10px 0 10px 0; }
+.top_menu { background:#690; padding:3px; color:white; font-size:11px; font-family:verdana,arial,helvetica,sans-serif;}
+.top_menu a { color:white; font-weight:bold; text-decoration:none; }
+.top_menu a:hover { text-decoration:underline; }
+.footer { font-family:verdana,arial,helvetica,sans-serif; font-size:10px; text-align:center; color:#690; padding-top:5px; clear:both; margin-top:5px; border-top:1px silver solid; }
+.editmenu { background:#eee; padding:3px; margin:.5em 0 .5em 0; clear:both; text-align:center; font-size:12px; }
+.editmenu a { color:gray; text-decoration:none; }
+.editmenu a:hover { color:black; text-decoration:underline; }
+.content { font-family:times new roman,times,serif; font-size:.9em; line-height:1.6em; }
+.info { font-family:verdana,arial,helvetica,sans-serif; font-size:11px; color:gray; clear:left; line-height:120%; text-align:right; margin:5px 0 20px 0; border-top:2px gray dotted; padding-top:5px; }
+.info a { color:gray; text-decoration:underline; }
+.info a:hover { color:black; }
+.images { margin-bottom:10px; }
+.images .image { height:124px; width:124px; margin:5px; padding:5px; border:1px silver solid; background:white; text-align:center; font-size:11px; float:left; }
+th { text-align:left; }
+th, td { font-size: medium; }
+a img { border:none; }
+.imleft { width:520px; margin-bottom:20px; float:left; text-align:center; background:white; margin-right:20px; }
+.imright { font-family:verdana,arial,helvetica,sans-serif; font-size:11px; color:gray; line-height:120%; }
+.pagemenu .heading { background:#690; color:white; font-weight:bold; padding:3px; margin-bottom:5px; font-size:12px; }
+.pagemenu a { color:black; text-decoration:none; font-weight:bold; }
+.pagemenu a:hover { color:gray; text-decoration:underline; }
+.tinyimage { width:50px; height:50px; float:left; margin:3px; }
+
+.ratingform { margin-top:5px; margin-bottom:5px; font-size:11px; color:gray; display:inline; }
+.ratingform form { border:none; padding:0; display:inline; }
+.removebutton { border:1px silver solid; background:white; font-size:10px; }
+
+.thumbnail { float:left; height:120px; width:120px; padding:10px; text-align:center; }
+.thumb { float:left; height:90px; width:90px; padding:10px; text-align:center; background:white; margin:2px; border:1px silver solid; }
+.blog_item { margin-bottom:1em; }
+.blog_item h1 { font-size:20px; }
+.blog_item h1 a { color:black; text-decoration:none; }
+.blog_item h1 a:hover { text-decoration:underline; }
+.blog_item h2 { font-size:16px; }
+.blog_item h3 { font-size:14px; font-style:italic; }
+.author { margin-bottom:0; }
+.dateline { margin-top:0; color:gray; font-family:verdana,arial,helvetica,sans-serif; font-size:12px; }
+.bigimage { border:1px silver solid; padding:20px; text-align:center; margin-bottom:10px; font-size:smaller; }
+.imagelist { width:340px; float:right; background:white; }
+.image { border:1px silver solid; padding:10px; margin:10px; text-align:center; }
+.blog_images { float:right; }
+.blog_image { float:right; }
+.gallery_image { margin:0 10px 10px 0; padding:10px; border:1px silver solid; text-align:center; width:160px; height:160px; background:white; float:left; }
+
+/* table class="list" for user profiles */
+.list { border-bottom:1px silver solid; width:100%; border-collapse:collapse; background:white; margin-bottom:1em; }
+.list th, .list td { font-family:verdana,arial,helvetica,sans-serif; font-size:11px; color:gray; padding:2px; }
+.list th { background:gray; color:white; font-weight:normal; }
+.list a { font-weight:bold; text-decoration:none; color:#690; }
+.list a:hover { color:black; }
+.list th a { color:white; font-weight:normal; text-decoration:none; }
+.list th a:hover { color:white; text-decoration:underline; }
+
+.rating, .sidebar { font-family:verdana,arial,helvetica,sans-serif; font-size:11px; color:gray; margin:0; }
+.sidebar a { color:gray; text-decoration:none; }
+.sidebar a:hover { text-decoration:underline; }
+.sidebar { width:150px; float:right; padding:10px; background:white; margin-left:10px; line-height:120%; border:1px silver solid; margin-bottom:10px; }
+
+.pageinfo { font-family:verdana,arial,helvetica,sans-serif; font-size:small; color:gray; line-height:120%; margin:10px 0 10px 0; }
+.pageinfo a { color:gray; text-decoration:underline; }
+
+.taglist { font-family:helvetica,arial,sans-serif; width:75%; float:right; padding-left:1em; }
+.taglist a { text-decoration:none; }
+.taglist a:hover { text-decoration:underline; }
+.pageinfo a:hover { color:black; }
+
+.paginator { font-family:verdana,arial,helvetica,sans-serif; font-size:12px; color:black; clear:both; margin:0; background:white; padding:3px; }
+.paginator a { color:gray; text-decoration:none; }
+.paginator a:hover { color:black; text-decoration:underline; }
+
+.odd { background:white; padding:2px; }
+.even { background:#eee; padding:2px; }
+
+.defaultform { font-family:verdana,arial,helvetica,sans-serif; font-size:12px; }
+
+div.calendar { text-align:center; font-size:12px; }
+table.calendar { margin:auto; width:160px; margin-bottom:10px; }
+.calendar th, .calendar td { font-size:10px; }
+.calendar th { text-align:center; }
+.calendar a { font-weight:normal; text-decoration:underline; }
+.calendar td { text-align:right; }
+.email_this { margin-top:1em; margin-bottom:1em; clear:both; text-align:center; font-family:verdana,arial,helvetica-sans-serif; font-size:12px; }
+.email_this a { color:gray; text-decoration:none; }
+.email_this a:hover { text-decoration:underline; }
+
+.rating { border:4px silver solid; width:78px; height:42px; text-align:center; padding:5px; margin-bottom:1em; }
+.starts { display:block; padding-bottom:10px; }
+.avgrating { font-size:24px; line-height:26px; color:gray; font-weight:bold; padding-top:5px; }
+#addtagform form { border:none; padding:0; margin:6px 0 6px 0; }
+#addtagwait { margin:6px 0 6px 0; color:maroon; }
+
+.minibutton { font-size:11px; }
+.memo { border:1px silver solid; background:white; padding:.5em; }
+.hello { background:#eee; padding:.5em 1em .5em 1em; margin:0 0 1em 0; }
+.hello p { margin: 0; }
+
+.breadcrumb { font-family:verdana,arial,helvetica,sans-serif; font-size:11px; color:gray; margin-bottom:2em; }
+.breadcrumb a { color:gray; text-decoration:none; }
+.breadcrumb a:hover { text-decoration:underline; }
+
+.comments { font-family:verdana,arial,helvetica,sans-serif; font-size:small; background:#eee; border:1px gray solid; border-top:none; margin-bottom:.5em; clear:both; }
+.comment { }
+.comment_subject { font-weight:bold; border-top:1px gray solid; background:#eee; border-bottom:1px gray solid; padding:2px; }
+.comment_text { background:white; padding:.5em; }
+.comment_buttons { float:right; width:200px; font-weight:normal; color:gray; text-align:right; }
+.comment_buttons a { font-size:11px; color:gray; text-decoration:none; }
+.comment_buttons a:hover { text-decoration:underline; }
+.comment_info { color:gray; font-style:italic; padding-bottom:3px; }
+
+.action form { display:inline; border:none; padding:0; }
+.action .addfriend { font-size:10px; padding:0; }
+
+.quotation { padding:1em 2em 1em 2em; font-family:georgia,times new roman,times,serif; font-size:16pt; line-height:24pt; font-style:italic; }
+.quotation .link { font-style:normal; font-family:verdana, arial, helvetica, sans-serif; font-size:11px; }

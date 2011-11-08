@@ -1,0 +1,56 @@
+# $Id: _htaccess,v 1.29 2006/02/16 14:40:02 glen Exp $
+# Copyright (c)2004-2005, Glen Campbell. All rights reserved.
+# See LICENSE.txt for details.
+# This file provides site-friendly errors and URL-rewriting.
+# THIS FILE ALSO ENABLES IMPORTANT SECURITY RESTRICTIONS; IT SHOULD
+# BE INSTALLED AS .htaccess EVEN IF URL REWRITING IS NOT USED.
+
+### NOTE: if your site is not installed in the Root Directory (/), you
+### should change the value of RewriteBase (below) to match your path.
+
+#
+# define custom error pages
+#
+ErrorDocument 401 /error.php?code=401
+ErrorDocument 403 /error.php?code=403
+ErrorDocument 404 /error.php?code=404
+ErrorDocument 500 /error.php?code=500
+
+#
+# disallow access to *.inc, *.ini, and *.tpl files
+#
+<Files ~ "\.(inc|ini|tpl|sql|sh)$">
+    Order allow,deny
+    Deny from all
+    Satisfy All
+</Files>
+
+#
+# URL rewriting to convert .../u/myname to .../user.php?name=myname
+#
+# If your website is not in the root directory,
+# change the RewriteBase to match the directory path
+#
+RewriteEngine On
+RewriteBase /
+RewriteRule ^api/V([0-9]+)/([a-zA-Z0-9_]+)$ api.php?v=$1&r=$2       [L,QSA]
+RewriteRule ^api/V([0-9]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ api.php?v=$1&r=$2&id=$3 [L,QSA]
+RewriteRule ^xmas$                  xmas.php                        [L,QSA]
+RewriteRule ^adhoc/([a-z_A-Z0-9-]+)$ text.php?id=$1                  [L,QSA]
+RewriteRule ^edit/([^/]+)/(.+)$     edit.php?c=$1&id=$2             [L,QSA]
+RewriteRule ^edit/(.+)$             edit.php?c=$1                   [L,QSA]
+RewriteRule ^group/(.+)$            group.php?id=$1                 [L,QSA]
+RewriteRule ^p/([a-z_A-Z0-9-]+)$     page.php?tag=$1                 [L,QSA]
+RewriteRule ^plugin/([^/]+)$        plugin.php?p=$1                 [L,QSA]
+RewriteRule ^tag/([a-z_A-Z0-9_\.\-]+)$ tag.php?tag=$1               [L,QSA]
+RewriteRule ^tags/([a-z_A-Z0-9-]+)$  tags.php?u=$1                   [L,QSA]
+RewriteRule ^tags/?$                tags.php                        [L,QSA]
+RewriteRule ^u/([a-z_A-Z0-9-]+)$     user.php?name=$1                [L,QSA]
+RewriteRule ^rss$                   rss.php?%{QUERY_STRING}         [L,QSA]
+RewriteRule ^rss/u/(.+)$            rss.php?user=$1                 [L,QSA]
+RewriteRule ^rss/favorites/(.+)$    rss.php?favorites=$1            [L,QSA]
+RewriteRule ^rss/group/(.+)$        rss.php?group=$1                [L,QSA]
+RewriteRule ^rss/tag/(.+)$          rss.php?tag=$1                  [L,QSA]
+RewriteRule ^rss/toprated$          rss.php?type=toprated           [L,QSA]
+RewriteRule ^rss/(.+)$              rss.php?folder=$1               [L,QSA]
+RewriteRule ^([a-zA-Z0-9_-]+)$       folder.php?tag=$1               [L,QSA]

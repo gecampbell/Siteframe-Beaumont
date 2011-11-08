@@ -1,0 +1,132 @@
+/* 
+ * $Id: siteframe.css,v 1.8 2006/01/15 02:12:48 glen Exp $
+ * Siteframe CSS extensions for the blue_blog template set
+ */
+
+/* modifications or additions to blue_blug styles */
+#right-column ul {
+    list-style: none;
+    text-indent: 0;
+    margin-bottom: 1em;
+}
+#right-column p, form p {
+    background: none;
+    padding-left: 0;
+}
+#content h1 {
+    margin-bottom: 2em;
+    padding-left: 14px;
+}
+#content h3 {
+    margin-top: 1em;
+    padding-left: 14px;
+    background: url(images/articlebg.gif) top left repeat-y;
+}
+#content ul {
+    list-style: none;
+    text-indent: 0;
+    padding-left: 14px;
+    margin-bottom: 1em;
+}
+
+/* primary styles */
+a img {
+    border: none;
+}
+form {
+    margin-left: 14px;
+    margin-bottom: 1em;
+    width: 94%;
+}
+#searchbox form {
+    padding: 0;
+    margin-left: 0;
+    width: auto;
+}
+#form_advanced {
+    background: #eee;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+label {
+    font-weight: bold;
+}
+textarea {
+    width: 100%;
+}
+input, textarea, select {
+    border: 1px gray solid;
+}
+.action {
+    clear: left;
+    background: none;
+    padding-left: 14px;
+    margin: 10px 0 4px 6px;
+}
+.error {
+    color: #C06;
+}
+div.calendar {
+    text-align: center;
+    margin-bottom: 1em;
+}
+td {
+    vertical-align: top;
+}
+table.calendar {
+    width: 100%;
+}
+table.calendar th {
+    text-align: center;
+}
+table.calendar td {
+    text-align: right;
+}
+div.paginator {
+    padding-left: 14px;
+}
+.blog_images {
+    width: auto;
+    padding-left: 14px;
+}
+.blog_image {
+    float: left;
+    margin-right: 4px;
+}
+.bigimage {
+    padding-left: 14px;
+    margin-bottom: 1em;
+}
+table.list {
+    width: 100%;
+    padding-left: 14px;
+}
+table.list th {
+    background: gray;
+    color: white;
+    text-align: left;
+    padding: 1px 4px 1px 4px;
+}
+table.list td {
+    border-bottom:1px gray solid;
+}
+#tags {
+    line-height: 32px;
+}
+#tags a {
+    text-decoration: none;
+}
+
+#comments {
+    background: #eee;
+    padding: 1em;
+    margin-left: 14px;
+    margin-bottom: 1em;
+}
+#comments p {
+    background: none;
+    padding: 0;
+}
+.comment_buttons {
+    float: right;
+}

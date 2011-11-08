@@ -1,0 +1,106 @@
+/* $Id: ws.css,v 1.29 2006/01/01 21:46:36 glen Exp $
+** Copyright (c)2005, Glen Campbell. All rights reserved.
+*/
+body { text-align:center; background:white; color:black; margin:0; }
+/*textarea.widgEditor { height:10em; }*/
+hr { border-width:1px; }
+th, td { vertical-align:top; font-family:verdana,arial,helvetica,sans-serif; line-height:130%; }
+pre, code { line-height:100%; }
+strong,h1,h2,h3,h4 { font-family: helvetica,tahoma,arial,verdana,sans-serif; }
+big { font-family: helvetica,tahoma,arial,verdana,sans-serif; font-weight:bold; }
+small { font-family:verdana,arial,helvetica,sans-serif; font-size:x-small; color:gray; text-transform:lowercase; }
+
+a img { border:none; }
+a { text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+form { font-family: verdana,helvetica,arial,sans-serif; font-size:11px; color:gray; clear:left; line-height:120%; margin-bottom:1em; }
+#form_advanced { padding:.5em; background:#eee; }
+textarea { width:90%; padding-left:.5em; }
+label { font-weight:bold; font-size:12px; color:black; }
+.item { padding-top:3px; padding-bottom:3px; }
+.help { margin-top:0; }
+input, select, textarea { border:1px gray solid; }
+#minisearch input { color: gray; margin-bottom: 1em; padding-left:3px;}
+#minisearch input.search { color: silver; }
+
+h1 { font-family: helvetica,arial,sans-serif; font-size:30px; font-weight:normal; color:black; letter-spacing:-2px; }
+blockquote { font-style: italic; font-size:18px; clear:left; padding:10px 0 10px 10px; line-height:150%; margin: 1em; border-top:1px silver solid; border-bottom:1px silver solid; }
+
+#content { background:#fff; text-align:left; width:auto; margin:10px 24px 5px 24px; border-left:2px gray solid; border-right:2px gray solid; }
+#wrapper { padding:10px; }
+#header { background: #eee ; font-family:helvetica,tahoma,arial,verdana,sans-serif; padding:5px 10px 2px 10px; border-bottom:1px gray solid; border-top:2px gray solid; margin-top:5px; }
+#header h1 { font-size:36px; padding-top:20px; font-weight:normal; letter-spacing:-2px; margin-top:0; margin-bottom:0; vertical-align:bottom; font-family:helvetica black, arial black, tahoma, helvetica, arial, sans-serif; }
+#header h1 a { color:black; text-decoration:none; }
+#header #sitename { font-size:12px; letter-spacing:0; margin-bottom:6px; color:gray; }
+#header #sitename a { color:gray; }
+#welcome { background: gray; font-family: verdana, arial, helvetica, sans-serif; font-size:small; color:white; font-size:12px; text-align:right; letter-spacing:0; border-bottom:1px gray solid; padding:1px 10px 1px 10px; }
+#welcome a { font-weight:normal; color:white; }
+#welcome a:hover { color:silver; text-decoration:none; }
+#main { width:73%; float:left; line-height:150%; }
+#menu { width:22%; float:left; font-family:helvetica,arial,sans-serif; font-size:smaller; margin-left:10px; color:black; line-height:130%; }
+#menu a { color:gray; text-decoration:none; }
+#menu a:hover { color:blue; }
+#menu a span { display:none; }
+#menu a:hover span { display:inline; color: black; }
+#menu ul { margin:0 0 20px 0; padding:0; list-style:none; }
+#menu ul big { font-weight:bold; }
+#menu p { margin-top:0; }
+#footer { clear:both; font-family:verdana,arial,helvetica,sans-serif; font-size:11px; color:gray; margin-top:10px; border-top:1px gray solid; border-bottom:2px gray solid; padding:5px; }
+#hello { font-family:helvetica,arial,sans-serif; font-size:small; margin-bottom:20px; line-height:130%; background:#eee; border:1px gray solid; padding:5px; }
+#hello p { margin-top:0;  }
+#header #hello a { font-weight:bold; color:black; }
+#wait { padding-top:5em; padding-bottom:10em; color:gray; font-style:italic; }
+#tags { font-family:helvetica,tahoma,verdana,arial,sans-serif; padding: 1em; line-height:2em; background: #eee; margin-bottom:1em; }
+#tags p { margin: 0; padding: 0; }
+
+.error { color:red; padding-top:1em; padding-bottom:1em; }
+.calendar { margin-left:auto; margin-right:auto; margin-bottom:1em; }
+.calendar, .calendar td, .calendar th { text-align:center; font-family:helvetica,tahoma,arial,verdana,sans-serif; font-size:small; }
+.calendar td { text-align:right; }
+.calendar a { font-weight:bold; }
+.info { font-family: helvetica,arial,verdana,sans-serif; font-size:small; color:gray; }
+.menu { font-family: helvetica,arial,sans-serif; font-size:smaller; color:gray; clear:left; margin-top:1em; margin-bottom:0; }
+.menu a { color:gray; text-decoration:none; }
+.menu a:hover { color:black; }
+
+.blog_item { clear:left; }
+.image_item { float:left; margin:0; padding:10px; text-align:center; width:100px; height:100px; overflow-y: hidden; }
+.image_item:hover { background:#eee; }
+.comments { font-family: helvetica,arial,verdana,sans-serif; font-size:small; margin-bottom:1em; line-height:130%; }
+.comments form textarea { height:5em; }
+.comment { background:#eee; border:1px gray solid; margin-bottom:.5em; padding:5px; }
+.comment:hover { background:white; }
+.comment_subject { font-size:larger; font-weight:bold; }
+.comment_buttons { float:right; font-size:smaller; font-weight:normal; color:gray; }
+.comment_buttons a { color:gray; }
+.comment_buttons a:hover { color:black; }
+.comment_text { }
+.comment_info { font-size:small; color:gray; }
+.cimage { clear:left; float:left; margin-right:6px; }
+
+table, tr, td, th { font-family:verdana,arial,helvetica,sans-serif; font-size:12px; }
+/* table class="list" for user profiles */
+.list { border-bottom:1px silver solid; width:100%; border-collapse:collapse; background:white; margin-bottom:1em; }
+.list th, .list td { font-family:verdana,arial,helvetica,sans-serif; font-size:11px; color:gray; padding:2px; }
+.list tr { border-bottom:1px silver solid; }
+.list th { background:gray; color:white; font-weight:normal; }
+.list a { font-weight:bold; text-decoration:none; color:steelblue; }
+.list a:hover { color:black; }
+.list th a { color:white; font-weight:normal; text-decoration:none; }
+.list th a:hover { color:white; text-decoration:underline; }
+
+.bigimage { background:silver; text-align:center; padding:10px; margin-bottom:1em; font-size:smaller; border:2px gray solid; }
+.bigimage a img { border:2px gray solid; }
+.bigimage a:hover img { border-color:white; }
+.blog_images { width:auto; float:left; margin-right:1em; clear:left; }
+.paginator { font-family:verdana,arial,helvetica,sans-serif; font-size:10px; }
+.breadcrumb { float:left; }
+
+.attachments { font-family:helvetica,arial,sans-serif; font-size:x-small; line-height:100%; border-bottom:1px silver solid; }
+.file { width:80px; height:100px; float:left; text-align:center; margin-right:10px; }
+.icon { width:80px; height:80px; text-align:center; vertical-align:bottom; display:table-cell; padding-bottom:5px; }
+
+.rating { border:4px silver solid; width:78px; height:42px; text-align:center; padding:5px; margin-bottom:1em; }
+.starts { display:block; padding-bottom:10px; }
+.avgrating { font-size:24px; line-height:26px; color:gray; font-weight:bold; padding-top:5px; }

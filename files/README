@@ -1,0 +1,22 @@
+$Id: README,v 1.1 2005/02/19 06:58:21 glen Exp $
+The "files" directory
+
+This directory is used to hold dynamic content created by the system.
+It MUST be writable by the web server process. For example, if your
+web server runs as "apache", then the "files" directory must be
+writable by "apache." If your webserver runs as "www," then "files"
+must be writable by "www." All dynamically-generated content will
+end up in this directory; this includes:
+
+. uploaded files
+. compiled templates
+. generated XML components
+
+As a worst-case scenario, you can make the directory writable by
+world (everyone) like this (under Unix/Linux):
+
+chmod -R go+w files/
+
+This is a bad idea, because malicious users on your system could
+then place their own content in the files directory, replacing your
+site's content.

@@ -1,0 +1,265 @@
+; $Id: siteframe.ini-dist,v 1.104 2006/05/16 17:44:25 glen Exp $
+; Copyright (c)2005, Glen Campbell. All rights reserved.
+; General configuration file for Siteframe
+; Modify this file as needed to suit your installation
+; Note that the [sections] are not currently used, but
+; may be required in a future version: please use them.
+
+[general]
+; these are basic site configuration parameters
+site_name = "Your Site Name Here"
+site_tagline = ""
+site_owner = "Your Name or Business"
+site_copyright = "Copyright &copy;2005, Your Name or Business"
+
+; the site_logo MAY be used by the templates if it is provided
+site_logo =
+
+; this is the complete URL to your website
+site_url = "http://your.url.here/path"
+
+; e-mail addresses. site_email should be a valid address; it is
+; mainly used in RSS and ATOM feeds, and could be used by someone
+; to report a problem. The site_email_from address is used as the
+; "From:" address when sending e-mail, and could be a "do-not-reply"
+; address to avoid spam problems
+site_email = webmaster@siteframe.org
+site_email_from = no_reply@siteframe.org
+comment_email_addr = ; email address for comments
+send_html_email = On
+
+; these are the various directories used by the software. You will not
+; usually need to modify them, but you can if you move things around
+dir_files = files
+dir_lang = lang
+dir_includes = includes
+dir_plugins = plugins
+dir_templates = templates
+dir_images = images
+; this setting is for the Siteframe Smarty plugins, and should not normally
+; need to be changed
+dir_smarty_plugins = smarty
+; if your Smarty installation is not in your PHP include_path, then you
+; can define this value to retrieve it properly
+dir_smarty = 
+
+; optional_include - specify an optional file that is loaded at the top
+; of every page. This can be used, for example, to specify a custom 
+; session handler or make other modifications
+optional_include =
+
+; alternate_login - if you want to modify Siteframe to use an alternate
+; authentication method, set this property to the name of a file to
+; include instead of the normal login.php script.
+alternate_login =
+
+[database]
+; modify the database connection parameters as required for your
+; site. Currently, "mysql" is the only db_type supported
+db_type = mysql
+db_host = localhost
+db_user = beaumont
+db_password = beaumont
+db_database = beaumont
+;db_port = 3306
+; you can optionally specify writer connections - this allows separate
+; databases for reading and writing in case you use replication
+;db_host_write =
+;db_user_write =
+;db_password_write =
+;db_database_write =
+;db_port_write =
+
+; the db_table_prefix is used when there are multiple Siteframe
+; installations in the same directory. If there's only one, then
+; just leave this blank; otherwise, choose a distinct table
+; prefix for each installation to keep their data separate
+db_table_prefix = bpt_
+
+[content]
+; If your site contains these types of common content, add the links here and
+; the information will be available to the templates
+content_link_about =            ; About This Site
+content_link_tos =              ; Terms of Service
+content_link_privacy =          ; Privacy Policy
+content_link_contact =          ; Contact Us
+content_link_help = help        ; Help page - built by setup script
+content_link_abuse =            ; Abuse Policy
+
+[language]
+; the language specified must have a corresponding language file
+; in the lang/ directory. lang_default must be a valid ISO-639 language code.
+lang_default = en-US
+charset = utf-8
+
+[templates]
+; this section defines the default templates used for the site
+; the templates must exist under the templates/ directory
+default_site_templates = default
+
+; allow_folder_theme - if On, then users can change their folder
+; template set; otherwise, all folders and pages will use the
+; default_site_templates.
+allow_folder_theme = On
+
+; syndication (these are site-wide settings; there are other settings
+; for syndication at the folder level). rss_ttl is the "time to live" (in
+; minude); if your site is frequently updated, then you might set a lower
+; value here. The rss_author will expose site member's email addresses in
+; the RSS feed; this could result in spammers collecting those addresses.
+rss_enable = On     ; turn RSS links on/off
+rss_ttl = 60        ; time-to-live
+rss_author = Off    ; if On, include author info in RSS (e-mail address)
+rss_fulltext = Off  ; if On, full-text RSS is generated
+rss_images = On     ; include images in RSS
+rss_image_size = 300; if images, what size to scale them
+;rss_comment =  ""  ; a header comment for the RSS file
+
+; use_subfolders - if On, then subfolders are enabled
+use_subfolders = Off
+
+; top_folder_admin_only - if On, the only administrators can create top-level
+; folders
+top_folder_admin_only = Off
+
+; url_rewriting determines how URLs are generated internally; if
+; this is turned On, "friendly" URLs (like /u/name) are generated.
+; Otherwise default URLs like /user.php?id=123 are generated.
+; This is STRONGLY recommended.
+url_rewriting = Off
+
+; date and time formats: see Smarty documentation for date_format function
+date_format = "%B %e, %Y"
+time_format = "%H:%M"
+
+; this sets the site default timezone
+default_timezone = -8 ; US Pacific Time
+
+; recent_items: the default number of items for "recent" queries
+recent_items = 20
+
+; image_quality: determines the JPEG compression (100%=high quality,
+; larger file sizes, 40%=low quality, smaller files)
+image_quality = 80
+
+; determines whether comments are seqential or threaded
+threaded_comments = On
+
+; rows_per_page: determines the number of queries that can be returned 
+; per page when pagination is used
+rows_per_page = 40
+
+; this flag determines whether or not a rich-text editor is available
+; the value should coordinate with the editor selected by the webmaster
+; other RTEs may be supported; check with http://siteframe.info for details
+rich_text_editor = Off
+;rich_text_editor = "fck"
+;rich_text_editor = "widg"
+
+[security]
+; Siteframe's audit log is in a MySQL table; if you prefer to log to
+; a file, then uncomment the following line and set the path 
+;audit_log_file = /var/log/siteframe-audit.log
+
+; modify these to specify the security settings for your site
+; login_required: if On, then users must login before viewing the site
+login_required = Off
+
+; this is the default login cookie name - change this and it will
+; force all users to re-authenticate themselves
+login_cookie = "sf"
+
+; this is the default number of days a login cookie is defined
+; set to 0 to require login for each session
+login_cookie_days = 90
+
+; open_registration: if On, then casual visitors can register
+open_registration = On
+
+; register_captcha: if On (default), then a captcha is presented during
+; registration to distinguish automated visitors from real users.
+register_captcha = On
+
+; confirm_email: very important: if this is On, then all e-mail addresses
+; (whether newly-registered or changed) must be verified via e-mail. If
+; this is Off, then users are immediately marked as valid
+confirm_email = On
+
+; crypt_function: sha1/md5
+; use sha1 if possible; however, md5 is required if using mysql < v4.0
+;crypt_function = md5
+crypt_function = sha1
+
+; bad_file_extensions: a space-separated list of disallowed file extensions
+; these are case-insensitive
+bad_file_extensions = ".exe .cmd .php .asp .jsp .cgi .pl .sh .com .js"
+
+; api_enable - turn OFF for enhanced security
+; Set this to On to enable the Siteframe API
+api_enable = On
+api_key_required = Off ; are API keys required for GET? (always for updates)
+
+; api_default_limit - if set, then users are limited to this number of API
+; calls in any 24-hour period.
+api_default_limit = 0
+
+; these are the default settings for comments, ratings, and public folders
+default_allow_comments = On
+default_allow_ratings = On
+default_folder_public = Off
+
+; turn On to allow users to rate their own stuff
+allow_self_rating = Off
+
+; these are the allowable HTML tags in formatted text fields
+allowed_html = "<br> <hr> <b> <i> <s> <u> <em> <quote> <ul> <li> <ol> <p> <div> <strong> <h2> <h3> <h4> <h5> <h6> <quote> <a> <dl> <dt> <dd> <img> <code> <pre> <small> <big> <span>"
+
+; user_log_enable: if On, then all page views are recorded in the user log.
+; Since this can consume a lot of database resources and adds overhead to 
+; every page view, it is Off by default.
+user_log_enable = Off
+; if you want to log to a file instead of a mysql table, uncomment 
+; the following line and change the value appropriately
+;user_log_file = /var/log/siteframe-user.log
+
+; trackback_enable: turn On to allow receipt of Trackback pings
+trackback_enable = Off
+
+[plugins]
+; plugins reside in the "dir_plugins" directory (defined above).
+; Plugins must be enabled here, however. To enable a plugin called 
+; "name.inc", the configuation property "name_enable" must be set On
+
+; email_all_content is the e-mail address to send all content to
+email_all_content_enable = Off
+email_all_content = 
+
+; email_memoranda - if On, then user's can choose to receive e-mailed copies of
+; all their online Memos
+email_memoranda_enable = Off
+
+; user_editor - allows user to select a text editor
+user_editor_enable = Off
+
+; user_folder - automatically create folders for new users
+user_folder_enable = Off
+
+; the "ping" plugin sends XML-RPC notices in weblogs.com format
+; ping_sites is a list of URLs to ping separated by spaces
+; N.B. ping_enable must be ON to allow outbound Trackbacks
+ping_enable = Off
+ping_sites = "http://rpc.technorati.com/rpc/ping http://ping.blo.gs/ http://api.my.yahoo.com/RPC2"
+
+; the quotas plugin supports a number of quotas, such as file size, resolution,
+; number per day, etc.
+quotas_enable = Off
+quotas_file_size_max = 4000000  ; in bytes
+quotas_file_res_max = 1200      ; in pixels
+quotas_file_per_day = 5
+quotas_page_per_day = 5
+quotas_folder_max = 3
+quotas_invitations_per_day = 10
+
+; the photoinfo plugin adds a number of properties for tracking information
+; for series photographers (camera, lens, film, exposure, etc.)
+photoinfo_enable = Off

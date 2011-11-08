@@ -1,0 +1,32 @@
+/**
+*** $Id: siteframe.css,v 1.2 2006/02/16 05:49:22 glen Exp $
+*** siteframe extensions to sinorca styling
+**/
+#right-column {
+    display: none;
+}
+#searchbox {
+    display: inline;
+    float: right;
+}
+#searchbox input {
+    font-size: 8px;
+    border: 1px gray solid;
+    color: gray;
+}
+#searchbox input.text {
+    padding: 1px 2px 1px 2px;
+}
+#searchbox form {
+    padding: 0;
+    width: auto;
+}
+a img {
+    border: none;
+}
+.bigimage {
+    margin-top: 1em;
+}
+label {
+    font-weight: bold;
+}

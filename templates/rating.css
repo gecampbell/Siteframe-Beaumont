@@ -1,0 +1,25 @@
+/* $Id: rating.css,v 1.1 2005/12/14 22:57:17 glen Exp $
+ * CSS for Rating Widget
+ */
+.rating {
+    border:4px silver solid; 
+    width:78px; 
+    height:48px; 
+    text-align:center; 
+    padding:5px; 
+    margin-bottom:1em; 
+}
+#avgrating {
+    font-size:28px; 
+    line-height:26px; 
+    color:gray; 
+    font-weight:bold; 
+    padding-top:5px; 
+}
+#numratings {
+    float:right; 
+    font-size:11px;
+}
+.stars {
+    margin-bottom: 4px;
+}
